@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Recycler_view-master.iml" filepath="$PROJECT_DIR$/Recycler_view-master.iml" />
+      <module fileurl="file://C:\Project\Recycler_view-master\Rview.iml" filepath="C:\Project\Recycler_view-master\Rview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
