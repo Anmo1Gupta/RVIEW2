@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.renderscript.Allocation;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -31,17 +32,18 @@ public class MainActivity extends AppCompatActivity
 //            Integer.parseInt("R.mipmap.ic_launcher")};
 
     private int[] images = {
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground,
-            R.drawable.ic_launcher_foreground
+            R.drawable.ic_broken_image_black_24dp,
+            R.drawable.ic_broken_image_black_24dp,
+            R.drawable.ic_broken_image_black_24dp,
+            R.drawable.ic_broken_image_black_24dp,
+            R.drawable.ic_broken_image_black_24dp,
+            R.drawable.ic_broken_image_black_24dp,
+            R.drawable.ic_broken_image_black_24dp,
+            R.drawable.ic_broken_image_black_24dp,
+            R.drawable.ic_broken_image_black_24dp,
+            R.drawable.ic_broken_image_black_24dp
     };
+
     private String[] data =  {"Avent 1",
         "Bvent 2",
         "Event 3",
@@ -123,7 +125,7 @@ public class MainActivity extends AppCompatActivity
             // - get element from your dataset at this position
             // - replace the contents of the view with that element
             holder.mTextView.setText(mDataset[position]);
-            //holder.mImageView.setImageResource(mIcons[position]);
+            holder.mImageView.setImageResource(mIcons[position]);
 
             if(position%2 == 0)
             {
